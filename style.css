@@ -1,0 +1,132 @@
+* {
+    margin: 0;
+    padding: 0;
+    user-select: none;
+    box-sizing: border-box;
+    outline: 0;
+}
+.game {
+   height: 100vh;
+   overflow: hidden;
+}
+.game .display {
+    height: 60%;
+    display: flex;
+    position: relative;
+}
+.game .display .point {
+    position: absolute;
+    top: 3%;
+    left: 50%;
+    translate: -50%;
+    background: orange;
+    padding: 10px 20px;
+    font: bold 24px cursive;
+    border-radius: 30px;
+    text-align: center;
+    box-shadow: 0 3px 5px gray;
+}
+.game .display .view,
+.game .display .example{
+    width: 50%;
+    box-shadow: inset 0 0 15px gray;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.game .display .view .box {
+   width: 200px;
+   height: 200px;
+   background: red;
+}
+.game .display .example .box {
+  width: 0;
+  height: 0;
+  background: none;
+}
+.game #editor {
+    width: 100%;
+    height: 40%;
+    background: #000;
+    color: white;
+    font: 22px monospace;
+    padding: 30px 35px;
+    resize: none;
+}
+.game #winner {
+    position: absolute;
+    font: bold 5rem verdana;
+    top: 70%;
+    left: 50%;
+    translate: -50% -50%;
+    color: green;
+    transition: 1s;
+    opacity: 0;
+}
+.marketing {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQCPzVz_vHX9Gy7-ABueh5xgsrffI71hQTVDw&s) center / 30%;
+    padding-top: 4vw;
+    text-align: center;
+    animation: body 1s infinite;
+    transition: .1s;
+}
+.marketing .title {
+   font: bold 5vw monospace;
+   color: #fff;
+}
+.marketing .descr {
+    position: absolute;
+    top: 40%;
+    left: 150%;
+    translate: -50% -50%;
+    width: 450px;
+    height: 450px;
+    border-radius: 30px;
+    background: #000;
+    text-align: center;
+    transition: 1s;
+}
+
+.marketing .descr p{
+    color: white;
+    font: 20px verdana;
+    padding: 30px;
+}
+.marketing .descr button {
+    position: absolute;
+    font: bold 20px verdana;
+    top: 0;
+    right: 0;
+    border-radius: 0 50%;
+    background: red;
+    color: white;
+    border: 0;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+.marketing .descr button:hover {
+    opacity: 1;
+    box-shadow: inset 0 0 15px;
+}
+.marketing .container .btn {
+    font: bold 3vw verdana;
+    cursor: pointer;
+    background: #000;
+    color: #fff;
+    display: inline-block;
+    padding: 15px 25px;
+    border-radius: 40px;
+    margin-top: 30px;
+}
+.marketing .container .btn:hover {
+    background: rgba(26, 128, 0, 0.89);
+}
+
+@keyframes body {
+    50% {background-size: 80%;}
+}
