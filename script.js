@@ -55,7 +55,7 @@ editor.oninput = () => {
             val.includes('background-color: orange;') &&
             val.includes('border-radius: 50%;')
         ) {
-            Control('width: 0;height: 0;  border-left: 100px solid transparent;  border-bottom: 100px solid red; clip-path: polygon(50% 0%, 100% 100%, 0% 100%);');
+            Control('width: 0;height: 0;  border-left: 100px solid transparent;  border-bottom: 100px solid blue; clip-path: polygon(50% 0%, 100% 100%, 0% 100%);');
         }
     }
     else if (room == 3) {
